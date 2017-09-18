@@ -1,0 +1,28 @@
+{
+  "name": "daniesy/hacked-emails",
+  "description": "A simple and updated Hacked Emails Api wrapper for Laravel 5.5+",
+  "type": "laravel",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Danut Florian",
+      "email": "hello@danutflorian.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "Daniesy\\HackedEmails\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Daniesy\\HackedEmails\\HackedEmailsServiceProvider"
+      ],
+      "aliases": {
+        "HackedEmails": "Daniesy\\HackedEmails\\Facades\\HackedEmails"
+      }
+    }
+  }
+}
