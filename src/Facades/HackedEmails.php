@@ -1,6 +1,6 @@
 <?php
 
-namespace Daniesy\HackedEmails\Facade;
+namespace Daniesy\HackedEmails\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

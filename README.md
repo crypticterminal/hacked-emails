@@ -30,13 +30,12 @@ Get starting in 1 easy step:
 
 ## Usage
 
-**Hacked Emails Scanner** implements all the features offered by the [Hacked Emails Api](https://hacked-emails.com) used to check if your accounts have been hacked. 
+**Hacked Emails Scanner** implements all the features offered by the [Hacked Emails Api](https://hacked-emails.com) used to check if your accounts have been hacked.
 
     use HackedEmails;
-    
-    $report = (new HackedEmails)->check('info@example.com');
-    
+
+    $report = HackedEmails::check('info@example.com');
+
     echo $report->isSafe();             // Returns a bool based on whether the email has been hacked or not    
     echo $report->getResults();         // The number of leaks
     var_dump($report->getHackData());   // Returns an array of leaks
-
